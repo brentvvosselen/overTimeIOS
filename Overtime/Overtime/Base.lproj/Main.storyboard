@@ -1,24 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Add Product View Controller-->
+        <scene sceneID="0MK-jJ-Trp">
+            <objects>
+                <viewController id="hBY-ZB-0xY" customClass="AddProductViewController" customModule="Overtime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o6H-tY-9Sp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPF-1c-nib">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLw-MR-WC2">
+                                        <rect key="frame" x="93" y="30" width="134" height="28"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.72575757190000001" blue="0.42924068110000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="YLw-MR-WC2" firstAttribute="top" secondItem="jPF-1c-nib" secondAttribute="top" constant="30" id="Pse-aa-R0L"/>
+                                    <constraint firstAttribute="height" constant="70" id="jLX-B2-pLq"/>
+                                    <constraint firstItem="YLw-MR-WC2" firstAttribute="centerX" secondItem="jPF-1c-nib" secondAttribute="centerX" id="y1Z-Eu-1fU"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="44i-WV-n88">
+                                <rect key="frame" x="50" y="110" width="220" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantity" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yca-ot-7fo">
+                                <rect key="frame" x="50" y="160" width="220" height="30"/>
+                                <nil key="textColor"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiration Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlm-he-xIk">
+                                <rect key="frame" x="98" y="230" width="124" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="txT-fJ-ieH">
+                                <rect key="frame" x="0.0" y="274" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="528828104.18930298">
+                                    <!--2017-10-04 16:41:44 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlT-jt-ZAH">
+                                <rect key="frame" x="117" y="500" width="86" height="30"/>
+                                <state key="normal" title="Add Product"/>
+                                <connections>
+                                    <action selector="addProductButtonClick:" destination="hBY-ZB-0xY" eventType="touchUpInside" id="iBa-86-3ek"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="txT-fJ-ieH" firstAttribute="top" secondItem="jlm-he-xIk" secondAttribute="bottom" constant="20" id="0ay-7j-dEi"/>
+                            <constraint firstItem="LlT-jt-ZAH" firstAttribute="top" secondItem="txT-fJ-ieH" secondAttribute="bottom" constant="10" id="2Be-kK-9Tk"/>
+                            <constraint firstItem="jlm-he-xIk" firstAttribute="top" secondItem="yca-ot-7fo" secondAttribute="bottom" constant="40" id="32o-nv-C7Y"/>
+                            <constraint firstItem="LlT-jt-ZAH" firstAttribute="centerX" secondItem="o6H-tY-9Sp" secondAttribute="centerX" id="8WV-qy-cQL"/>
+                            <constraint firstItem="jPF-1c-nib" firstAttribute="top" secondItem="o6H-tY-9Sp" secondAttribute="top" id="AMe-dN-7Ij"/>
+                            <constraint firstItem="txT-fJ-ieH" firstAttribute="centerX" secondItem="o6H-tY-9Sp" secondAttribute="centerX" id="EwG-SC-9eU"/>
+                            <constraint firstItem="yca-ot-7fo" firstAttribute="top" secondItem="44i-WV-n88" secondAttribute="bottom" constant="20" id="Htk-jE-giy"/>
+                            <constraint firstItem="44i-WV-n88" firstAttribute="leading" secondItem="H8u-k0-Nmu" secondAttribute="leading" constant="50" id="QUw-wg-1YE"/>
+                            <constraint firstItem="H8u-k0-Nmu" firstAttribute="trailing" secondItem="44i-WV-n88" secondAttribute="trailing" constant="50" id="XPL-qT-ZC2"/>
+                            <constraint firstItem="jlm-he-xIk" firstAttribute="centerX" secondItem="o6H-tY-9Sp" secondAttribute="centerX" id="d4x-w0-G32"/>
+                            <constraint firstItem="yca-ot-7fo" firstAttribute="leading" secondItem="H8u-k0-Nmu" secondAttribute="leading" constant="50" id="gbC-8g-JUH"/>
+                            <constraint firstItem="jPF-1c-nib" firstAttribute="trailing" secondItem="H8u-k0-Nmu" secondAttribute="trailing" id="ifj-S5-G3T"/>
+                            <constraint firstItem="H8u-k0-Nmu" firstAttribute="trailing" secondItem="yca-ot-7fo" secondAttribute="trailing" constant="50" id="o1S-dL-ICF"/>
+                            <constraint firstItem="jPF-1c-nib" firstAttribute="leading" secondItem="H8u-k0-Nmu" secondAttribute="leading" id="saK-kT-agY"/>
+                            <constraint firstItem="44i-WV-n88" firstAttribute="top" secondItem="jPF-1c-nib" secondAttribute="bottom" constant="40" id="ypQ-pY-J25"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H8u-k0-Nmu"/>
+                    </view>
+                    <connections>
+                        <outlet property="expirationDatePicker" destination="txT-fJ-ieH" id="myP-LA-JJ6"/>
+                        <outlet property="nameTxt" destination="44i-WV-n88" id="C7A-nT-5c4"/>
+                        <outlet property="quantityTxt" destination="yca-ot-7fo" id="tE7-zF-Fce"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dvf-yt-3Em" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="134"/>
+        </scene>
+        <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ListViewController" customModule="Overtime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQU-1S-AgW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overtime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmb-cN-LO0">
+                                        <rect key="frame" x="116.5" y="30" width="87.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwJ-7B-ZQr">
+                                        <rect key="frame" x="275" y="31.5" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="idU-LE-jjg"/>
+                                            <constraint firstAttribute="height" constant="25" id="jJV-E8-me3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" image="ic_plus"/>
+                                        <connections>
+                                            <action selector="addProductBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U7a-oJ-Jbf"/>
+                                            <segue destination="hBY-ZB-0xY" kind="showDetail" identifier="AddProductViewController" id="uPq-fd-a27"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.72575757187572998" blue="0.4292406811460312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dwJ-7B-ZQr" secondAttribute="trailing" constant="20" id="5wn-qd-Zj7"/>
+                                    <constraint firstAttribute="height" constant="70" id="Fn7-K7-PNi"/>
+                                    <constraint firstItem="dwJ-7B-ZQr" firstAttribute="centerY" secondItem="Hmb-cN-LO0" secondAttribute="centerY" id="L9K-bG-AJZ"/>
+                                    <constraint firstItem="Hmb-cN-LO0" firstAttribute="centerX" secondItem="cQU-1S-AgW" secondAttribute="centerX" id="SeE-Tp-eUX"/>
+                                    <constraint firstItem="Hmb-cN-LO0" firstAttribute="top" secondItem="cQU-1S-AgW" secondAttribute="top" constant="30" id="qPC-Xf-CIv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cQU-1S-AgW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nWj-N9-O7a"/>
+                            <constraint firstItem="cQU-1S-AgW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qSi-z3-Px4"/>
+                            <constraint firstItem="cQU-1S-AgW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rH4-J3-ld8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_plus" width="35" height="35"/>
+    </resources>
 </document>

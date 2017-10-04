@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		6C3D44A21F85357B00AE7734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D44A11F85357B00AE7734 /* AppDelegate.swift */; };
-		6C3D44A41F85357B00AE7734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D44A31F85357B00AE7734 /* ViewController.swift */; };
+		6C3D44A41F85357B00AE7734 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D44A31F85357B00AE7734 /* ListViewController.swift */; };
 		6C3D44A71F85357B00AE7734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D44A51F85357B00AE7734 /* Main.storyboard */; };
 		6C3D44A91F85357B00AE7734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D44A81F85357B00AE7734 /* Assets.xcassets */; };
 		6C3D44AC1F85357B00AE7734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D44AA1F85357B00AE7734 /* LaunchScreen.storyboard */; };
+		6C3D44B41F853B0000AE7734 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D44B31F853B0000AE7734 /* Product.swift */; };
+		6C3D44B61F85453B00AE7734 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D44B51F85453B00AE7734 /* AddProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C3D449E1F85357B00AE7734 /* Overtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3D44A11F85357B00AE7734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C3D44A31F85357B00AE7734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C3D44A31F85357B00AE7734 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		6C3D44A61F85357B00AE7734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C3D44A81F85357B00AE7734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C3D44AB1F85357B00AE7734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C3D44AD1F85357B00AE7734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C3D44B31F853B0000AE7734 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		6C3D44B51F85453B00AE7734 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				6C3D44A11F85357B00AE7734 /* AppDelegate.swift */,
-				6C3D44A31F85357B00AE7734 /* ViewController.swift */,
+				6C3D44A31F85357B00AE7734 /* ListViewController.swift */,
+				6C3D44B51F85453B00AE7734 /* AddProductViewController.swift */,
 				6C3D44A51F85357B00AE7734 /* Main.storyboard */,
 				6C3D44A81F85357B00AE7734 /* Assets.xcassets */,
 				6C3D44AA1F85357B00AE7734 /* LaunchScreen.storyboard */,
 				6C3D44AD1F85357B00AE7734 /* Info.plist */,
+				6C3D44B31F853B0000AE7734 /* Product.swift */,
 			);
 			path = Overtime;
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C3D44A41F85357B00AE7734 /* ViewController.swift in Sources */,
+				6C3D44A41F85357B00AE7734 /* ListViewController.swift in Sources */,
 				6C3D44A21F85357B00AE7734 /* AppDelegate.swift in Sources */,
+				6C3D44B61F85453B00AE7734 /* AddProductViewController.swift in Sources */,
+				6C3D44B41F853B0000AE7734 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
